@@ -15,22 +15,14 @@ int *returnArray(int array[]);
 
 int main()
 {
-    int age = 5;
-
-    struct Test test1;
-
-    strcpy(test1.name, "test");
-    test1.version[0] = 0.1;
-    test1.version[1] = 1.0;
-
-    printf("%d\n", returnAge(&age));
-    printf("My new struct's name is %s, version %f\n", returnName(&test1), returnVersion(&test1)[1]);
-
-    int myArray[5] = {1, 2, 3, 4, 5};
-
-    printf("%d", returnArray(myArray)[0]);
-
-    return 0;
+    char input;
+    scanf("%c", &input);
+    while (input == 'y')
+    {
+        fflush(stdin);
+        printf("Test");
+        scanf("%c", &input);
+    }
 }
 
 int returnAge(int *age)
